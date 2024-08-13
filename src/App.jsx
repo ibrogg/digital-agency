@@ -10,6 +10,7 @@ import Services from "./components/Services/Services";
 import Testimonial from "./components/Testimonial/Testimonial";
 import BlogsComp from "./components/Blogs/BlogsComp.jsx";
 import Footer from "./components/Footer/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   useEffect(() => {
@@ -23,15 +24,17 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
-      <Navbar />
-      <Hero />
-      <BrandsLogo />
-      <Services />
-      <Testimonial />
-      <BlogsComp />
-      <Footer />
-    </div>
+    <BrowserRouter basename="/digital-agency">
+      <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
+        <Navbar />
+        <Hero />
+        <BrandsLogo />
+        <Services />
+        <Testimonial />
+        <BlogsComp />
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 };
 
