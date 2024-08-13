@@ -7,8 +7,8 @@ import DarkMode from "./DarkMode";
 export const MenuLinks = [
   {
     id: 1,
-    name: "About",
-    link: "#about",
+    name: "Home",
+    link: "#home",
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="container py-3 md:py-2">
         <div className="flex justify-between items-center">
           {/* Logo section */}
-          <a target="_blank" href="/" className="flex items-center gap-3">
+          <a href="#home" className="flex items-center gap-3">
             <img src={Logo} alt="" className="w-5" />
             <span className="text-2xl sm:text-3xl font-semibold">
               Digital agency
